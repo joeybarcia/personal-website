@@ -6,10 +6,12 @@ import About from './AboutComponent'
 import Home from './HomeComponent'
 
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import Container from '@material-ui/core/Container'
 
 function Main() {
     return (
         <React.Fragment>
+            <Container maxWidth="sm" content="center">
             <Header />
             <switch>
                 <Route path='/home' component={Home} />
@@ -17,6 +19,7 @@ function Main() {
                 <Redirect to='/home'/>
             </switch>
             <Footer />
+            </Container>
         </React.Fragment>
     )
 }
