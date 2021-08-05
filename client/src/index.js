@@ -3,11 +3,33 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createTheme, ThemeProvider } from "@material-ui/core";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#03045e" // This is an orange looking color
+    },
+    secondary: {
+      main: "#023e8a" //Another orange-ish color
+    }
+
+  },
+//   button: {
+//     // backgroundColor: '#3c52b2',
+//     // color: '#fff',
+//     '&:hover': {
+//       backgroundColor: '#000',
+//       color: '#000',
+//   },
+// },
+});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode></ThemeProvider>,
   document.getElementById('root')
 );
 

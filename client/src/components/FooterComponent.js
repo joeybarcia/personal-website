@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 function Footer(){
     const classes=useStyles();
     return(
-        <footer className={classes.footer}>footer content</footer>
+        <footer className={classes.footer}>Copyright Joey Barcia {new Date().getFullYear()} </footer>
     )
 }
 

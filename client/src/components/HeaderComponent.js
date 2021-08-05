@@ -24,6 +24,14 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         flexShrink: 0,
     },
+    button: {
+        // backgroundColor: '#3c52b2',
+        // color: '#fff',
+        '&:hover': {
+          backgroundColor: theme.palette.primary,
+          color: '${theme.palette.primary}',
+      },
+    },
 }));
 
 function Header() {
@@ -35,12 +43,12 @@ function Header() {
                 <Typography
                     //   component="h3"
                     variant="h4"
-                    color="inherit"
+                    color="primary"
                     align="right"
                     noWrap
                     className={classes.toolbarTitle}
                 >
-                    Title
+                    Joey Barcia
                 </Typography>
 
             </Toolbar>
@@ -49,9 +57,9 @@ function Header() {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Button component={Link} to={'/Home'}>Home</Button>
-                <Button component={Link} to={'/about'}>About</Button>
-                <Button component={Link} to={'/portfolio'}>Portfolio</Button>
+                <Button className={classes.button} component={Link} to={'/Home'}>Home</Button>
+                <Button className={classes.button} component={Link} to={'/about'}>About</Button>
+                <Button className={classes.button} component={Link} to={'/portfolio'}>Portfolio</Button>
                 <Button href="#text-buttons" color="primary">
                     Link
                 </Button>

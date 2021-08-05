@@ -4,6 +4,7 @@ import Footer from './FooterComponent'
 
 import About from './AboutComponent'
 import Home from './HomeComponent'
+import Portfolio from './PortfolioComponent'
 
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import Container from '@material-ui/core/Container'
@@ -16,6 +17,7 @@ function Main() {
             <switch>
                 <Route path='/home' component={Home} />
                 <Route path='/about' component={About} />
+                <Route path='/portfolio' component={Portfolio} />
                 <Redirect to='/home'/>
             </switch>
             <Footer />
