@@ -1,6 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import Box from '@material-ui/core/Box';
+
 function About(){
     return(
         <React.Fragment>

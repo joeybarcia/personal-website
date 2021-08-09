@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
+// import AppBar from '@material-ui/core/AppBar';
+// import IconButton from '@material-ui/core/IconButton';
 import { Link } from 'react-router-dom'
 
 import Typography from '@material-ui/core/Typography';
@@ -11,10 +11,11 @@ import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
-        borderBottom: `1px solid ${theme.palette.divider}`,
+        borderBottom: `3px solid ${theme.palette.divider}`,
     },
     toolbarTitle: {
         flex: 1,
+        fontFamily: 'Titillium Web',
     },
     toolbarSecondary: {
         justifyContent: 'space-between',
@@ -28,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
         // backgroundColor: '#3c52b2',
         // color: '#fff',
         '&:hover': {
-          backgroundColor: theme.palette.primary,
-          color: '${theme.palette.primary}',
-      },
+            backgroundColor: theme.palette.primary,
+            // color: '${theme.palette.primary}',
+        },
     },
 }));
 
@@ -39,15 +40,12 @@ function Header() {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
-                text here
                 <Typography
-                    //   component="h3"
+                    align="right"
                     variant="h4"
                     color="primary"
-                    align="right"
                     noWrap
-                    className={classes.toolbarTitle}
-                >
+                    className={classes.toolbarTitle}>
                     Joey Barcia
                 </Typography>
 
@@ -60,9 +58,9 @@ function Header() {
                 <Button className={classes.button} component={Link} to={'/Home'}>Home</Button>
                 <Button className={classes.button} component={Link} to={'/about'}>About</Button>
                 <Button className={classes.button} component={Link} to={'/portfolio'}>Portfolio</Button>
-                <Button href="#text-buttons" color="primary">
+                {/* <Button href="#text-buttons" color="primary">
                     Link
-                </Button>
+                </Button> */}
             </Box>
         </React.Fragment>
     )

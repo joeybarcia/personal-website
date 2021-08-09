@@ -20,7 +20,7 @@ function Main() {
                 <Route path='/portfolio' component={Portfolio} />
                 <Redirect to='/home'/>
             </switch>
-            <Footer />
+            {/* <Footer /> */}
             </Container>
         </React.Fragment>
     )
