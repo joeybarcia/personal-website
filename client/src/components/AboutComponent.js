@@ -11,9 +11,9 @@ function About(){
           My name is Joey Barcia and I am an aspiring Software Developer. <br></br>
           I obtained a B.S. in Computer Science from the University of California, Santa Cruz in
           June 2021. <br></br>
-          My passions lie in software and web development, particularly full stack
+          My passions lie in software and web development, with a focus on full stack
           development.<br></br>
-          I enjoy learning new technologies and frameworks, and some of my most frequented
+          I enjoy learning new technologies and frameworks; some of my most frequented 
           include C, C++, Java and HTML/CSS. 
           </p>
         </Box>

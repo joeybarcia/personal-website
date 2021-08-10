@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-// import AppBar from '@material-ui/core/AppBar';
-// import IconButton from '@material-ui/core/IconButton';
 import { Link } from 'react-router-dom'
 
 import Typography from '@material-ui/core/Typography';
@@ -40,8 +38,9 @@ function Header() {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
+                {/* <img src="/images/spoopy.png" onClick={"google.com"}></img> */}
                 <Typography
-                    align="right"
+                    // align="right"
                     variant="h4"
                     color="primary"
                     noWrap
@@ -58,9 +57,6 @@ function Header() {
                 <Button className={classes.button} component={Link} to={'/Home'}>Home</Button>
                 <Button className={classes.button} component={Link} to={'/about'}>About</Button>
                 <Button className={classes.button} component={Link} to={'/portfolio'}>Portfolio</Button>
-                {/* <Button href="#text-buttons" color="primary">
-                    Link
-                </Button> */}
             </Box>
         </React.Fragment>
     )
